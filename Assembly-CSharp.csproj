@@ -58,6 +58,8 @@
      <Compile Include="Assets\Scripts\Player Scripts\PlayerFootsteps.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerSprintAndCrouch.cs" />
+     <Compile Include="Assets\Scripts\Weapon Scripts\WeaponHandler.cs" />
+     <Compile Include="Assets\Scripts\Weapon Scripts\WeaponManager.cs" />
      <None Include="Assets\Shaders\Standard\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Shaders\Standard\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Shaders\Standard\_Antialiasing\FXAAPreset3.shader" />
