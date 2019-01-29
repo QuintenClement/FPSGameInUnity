@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+    <ProjectGuid>{8A8CE32F-3104-4BD5-99C9-7D322FC36652}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,7 +55,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Helper Scripts\TagHolder.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerFootsteps.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerSprintAndCrouch.cs" />
      <None Include="Assets\Shaders\Standard\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Shaders\Standard\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Shaders\Standard\_Antialiasing\FXAAPreset3.shader" />
@@ -74,19 +76,19 @@
      <None Include="Assets\Shaders\Standard\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Shaders\Standard\_BloomAndFlares\LensFlareCreate.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>Q:/Unity FPS Game/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>Q:/Unity FPS Game/FPSGameInUnity/FPSGameInUnity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>Q:/Unity FPS Game/New Unity Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>Q:/Unity FPS Game/FPSGameInUnity/FPSGameInUnity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>Q:/Unity FPS Game/New Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>Q:/Unity FPS Game/FPSGameInUnity/FPSGameInUnity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>Q:/Unity FPS Game/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>Q:/Unity FPS Game/FPSGameInUnity/FPSGameInUnity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>Q:/Unity FPS Game/New Unity Project/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>Q:/Unity FPS Game/FPSGameInUnity/FPSGameInUnity/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>Q:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -290,13 +292,13 @@
  <HintPath>Q:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>Q:/Unity FPS Game/New Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>Q:/Unity FPS Game/FPSGameInUnity/FPSGameInUnity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>Q:/Unity FPS Game/New Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>Q:/Unity FPS Game/FPSGameInUnity/FPSGameInUnity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>Q:/Unity FPS Game/New Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>Q:/Unity FPS Game/FPSGameInUnity/FPSGameInUnity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>Q:/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
