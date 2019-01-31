@@ -9,6 +9,7 @@ TagManager:
   - Look Root
   - FP Camera
   - Arrow
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - 
   - PostProcessing
   - FirstPerson
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 

@@ -57,7 +57,7 @@ public class PlayerAttack : MonoBehaviour
                 nextTimeToFire = Time.time + 1f / fireRate;
                 weapon_Manager.GetCurrentSelectedWeapon().ShootAnimation();
 
-                //BulletFired();
+                BulletFired();
             }
         } else {
             if (Input.GetMouseButtonDown(0))
@@ -70,6 +70,7 @@ public class PlayerAttack : MonoBehaviour
                 if (weapon_Manager.GetCurrentSelectedWeapon().bulletType == WeaponBulletType.BULLET)
                 {
                     weapon_Manager.GetCurrentSelectedWeapon().ShootAnimation();
+                    BulletFired();
                 }
                 else
                 {
@@ -138,6 +139,18 @@ public class PlayerAttack : MonoBehaviour
             GameObject spear = Instantiate(spear_Prefab);
             spear.transform.position = arrow_Bow_StartPosition.position;
             spear.GetComponent<ArrowBowScript>().Launch(mainCam);
+        }
+    }
+
+    void BulletFired()
+    {
+        RaycastHit hit;
+        if(Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit))
+        {
+            if(hit.transform.tag == Tags.ENEMY_TAG)
+            {
+                hit.transform.GetComponent<HealthScript>().ApplyDamage(damage);
+            }
         }
     }
 }//class
