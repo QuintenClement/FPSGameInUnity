@@ -495,6 +495,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae69844d7727c3f4db1d77e0a84903d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walk_Speed: 0.5
+  run_Speed: 3
+  chase_Distance: 7
+  attack_Distance: 1.8
+  chase_After_Attack_Distance: 2
+  patrol_Radius_Min: 20
+  patrol_Radius_Max: 60
+  patrol_For_This_Time: 15
+  wait_Before_Attack: 2
 --- !u!114 &4385033532742183198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,17 +531,17 @@ PrefabInstance:
     - target: {fileID: 7584256806841741704, guid: 326885620367446418c9b181249543dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45
+      value: 79.86
       objectReference: {fileID: 0}
     - target: {fileID: 7584256806841741704, guid: 326885620367446418c9b181249543dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21
+      value: 22.59
       objectReference: {fileID: 0}
     - target: {fileID: 7584256806841741704, guid: 326885620367446418c9b181249543dc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 111.31
+      value: 115.28
       objectReference: {fileID: 0}
     - target: {fileID: 7584256806841741704, guid: 326885620367446418c9b181249543dc,
         type: 3}
