@@ -14,13 +14,18 @@ public class EnemyController : MonoBehaviour
 {
     private EnemyAnimator enemy_Anim;
     private NavMeshAgent navAgent;
+
     private EnemyState enemy_State;
+
     public float walk_Speed = 0.5f;
     public float run_Speed = 4f;
+
     public float chase_Distance = 7f;
     private float current_Chase_Distance;
+
     public float attack_Distance = 1.8f;
     public float chase_After_Attack_Distance = 2f;
+
     public float patrol_Radius_Min = 20, patrol_Radius_Max = 60f;
     public float patrol_For_This_Time = 15f;
     private float patrol_Timer;
@@ -32,11 +37,14 @@ public class EnemyController : MonoBehaviour
 
     public GameObject attack_Point;
 
+    private EnemyAudio enemy_Audio;
+
     void Awake()
     {
         enemy_Anim = GetComponent<EnemyAnimator>();
         navAgent = GetComponent<NavMeshAgent>();
         target = GameObject.FindWithTag(Tags.PLAYER_TAG).transform;
+        enemy_Audio = GetComponentInChildren<EnemyAudio>();
     }
 
 
@@ -90,6 +98,7 @@ public class EnemyController : MonoBehaviour
             enemy_Anim.Walk(false);
             enemy_State = EnemyState.CHASE;
             //play spotting audio
+            enemy_Audio.Play_ScreamSound();
         }
     }//patrol
 
@@ -126,10 +135,11 @@ public class EnemyController : MonoBehaviour
             enemy_Anim.Walk(false);
             enemy_State = EnemyState.ATTACK;
             //reset chase distance
-            if(chase_Distance != current_Chase_Distance)
+            if (chase_Distance != current_Chase_Distance)
             {
                 chase_Distance = current_Chase_Distance;
             }
+            
         } else if(Vector3.Distance(transform.position, target.position) > chase_Distance) 
         {
             enemy_Anim.Run(false);
@@ -155,6 +165,7 @@ public class EnemyController : MonoBehaviour
             enemy_Anim.Attack();
             attack_Timer = 0f;
             //play attack sound
+            enemy_Audio.Play_AttackSound();
         }
         if(Vector3.Distance(transform.position, target.position) >
            attack_Distance + chase_After_Attack_Distance)

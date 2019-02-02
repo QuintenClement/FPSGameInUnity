@@ -54,15 +54,19 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyAnimator.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyAudio.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\TagHolder.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\AttackScript.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerAttack.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerAxeSounds.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerFootsteps.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerSprintAndCrouch.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\Weapon Scripts\ArrowBowScript.cs" />
      <Compile Include="Assets\Scripts\Weapon Scripts\WeaponHandler.cs" />
      <Compile Include="Assets\Scripts\Weapon Scripts\WeaponManager.cs" />

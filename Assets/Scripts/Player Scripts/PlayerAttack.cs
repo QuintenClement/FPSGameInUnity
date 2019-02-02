@@ -15,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     private Camera mainCam;
     private GameObject crosshair;
     private bool is_Aiming;
+
     [SerializeField]
     private GameObject arrow_Prefab, spear_Prefab;
 
@@ -54,7 +55,7 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Input.GetMouseButton(0) && Time.time > nextTimeToFire)
             {
-                nextTimeToFire = Time.time + 1f / fireRate;
+                nextTimeToFire = Time.time / fireRate;
                 weapon_Manager.GetCurrentSelectedWeapon().ShootAnimation();
 
                 BulletFired();
@@ -145,12 +146,15 @@ public class PlayerAttack : MonoBehaviour
     void BulletFired()
     {
         RaycastHit hit;
+
         if(Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit))
         {
             if(hit.transform.tag == Tags.ENEMY_TAG)
             {
                 hit.transform.GetComponent<HealthScript>().ApplyDamage(damage);
+                
             }
+            print("I hit" + hit.transform.name);
         }
     }
 }//class

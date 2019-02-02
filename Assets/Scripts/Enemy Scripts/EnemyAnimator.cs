@@ -32,8 +32,5 @@ public class EnemyAnimator : MonoBehaviour
         anim.SetTrigger(AnimationTags.DEAD_TRIGGER);
     }
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }//class

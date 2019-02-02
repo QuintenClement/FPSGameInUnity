@@ -35,6 +35,7 @@ Transform:
   m_Children:
   - {fileID: 4042064859071600858}
   - {fileID: 9038412341726767245}
+  - {fileID: 2799426826924830187}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -138,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6853195da207ca247bf102d94bb08a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 10000
   is_Player: 0
   is_Boar: 1
   is_Cannibal: 0
@@ -812,7 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e309e8017a710c541a85b1650a0b8020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 5
   radius: 1
   layerMask:
     serializedVersion: 2
@@ -1007,6 +1008,58 @@ Transform:
   m_Father: {fileID: 443491709485150082}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.000016992148, y: 7.0091352, z: -0.0000012215322}
+--- !u!1 &6082343032642947183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2799426826924830187}
+  - component: {fileID: 7737613879217170912}
+  m_Layer: 10
+  m_Name: BoarSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2799426826924830187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6082343032642947183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7444782426581319161}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7737613879217170912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6082343032642947183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d919b9d91f8d94b8ffbdfd727e95e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scream_Clip: {fileID: 8300000, guid: f4a80f10158aacd49b07db294cecea11, type: 3}
+  die_Clip: {fileID: 8300000, guid: 9dfe9c2152493dc47850519fe7733083, type: 3}
+  attack_Clips:
+  - {fileID: 8300000, guid: 33504f03e1fb5ba4eb187fc03b32fbcf, type: 3}
+  - {fileID: 8300000, guid: 21970782e4c9cc848a7e779c1a65e26e, type: 3}
+  - {fileID: 8300000, guid: cf0d36d8619e3314b8f8dfd7c6d99f9e, type: 3}
+  - {fileID: 8300000, guid: ebb74efe840d9b641b11b5850b5e8d67, type: 3}
+  - {fileID: 8300000, guid: c11abdea52bdb54479a8bf02fdfb0437, type: 3}
+  - {fileID: 8300000, guid: 96bb4270a9e4de24c9f1d9e1219f96c3, type: 3}
 --- !u!1 &6284829916687413316
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,8 +42,19 @@ public class WeaponManager : MonoBehaviour
         {
             TurnOnSelectedWeapon(5);
         }
+        if (Input.GetMouseButtonDown(3))
+        {
+            GoUpOneWeapon();
+        }
 
 
+    }
+    void GoUpOneWeapon()
+    {
+        var weaponIndex = current_Weapon_Index + 1;
+        weapons[current_Weapon_Index].gameObject.SetActive(false);
+        weapons[current_Weapon_Index + 1].gameObject.SetActive(true);
+        current_Weapon_Index = weaponIndex;
     }
     void TurnOnSelectedWeapon(int weaponIndex)
     {
